@@ -1,4 +1,8 @@
 <h1>Welcome</h1>
+<div>
+  <p> Type Something in the box</p>
+   <p> Name: <input</p>
+</div>
 
 <div class="play-container"  [class.active]="clickCounter > 5">
     <p>You've clicked <span (click)="countClick()">this</span>{{ clickCounter }} times.</p>
@@ -10,6 +14,12 @@
         <strong>You said:</strong>{{ name }}
     </p>
     
+</div>
+<div ng-app="" ng-init="firstname='Chukwu Anthony'">
+<p>Input something into the box</p>
+<p>Name: <input type ="text" ng-model="firstname" > </p>
+<p>you wrote:<span ng-bind="firstname"></span> </p>
+
 </div>
  <div class="play-container"  [ngStyle]="{
     'background-color': clickCounter > 4 ? 'yellow' : 'pink',
